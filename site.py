@@ -75,7 +75,7 @@ movie_dict = pickle.load(open('movie_dict.pkl','rb'))
 
 def fetch_poster(movie_id):
     api_key = 'your_tmdb_api_key'  # Replace this with your real TMDB API key
-    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZGQyMjIwMjdhOTQwNWJkZDMxM2JiZDc2ZWViN2FlZiIsIm5iZiI6MTc1MjQyNDgwOC4wOTcsInN1YiI6IjY4NzNlMTY4N2FhYjE1MGZiOTcwNTYwZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VMilAyoISYAxTp2yeqaMURqvazBobfzLzyzlIxwhjq4'}&language=en-US"
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={'key'}&language=en-US"
     data = requests.get(url).json()
 
 
